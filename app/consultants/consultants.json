@@ -1,0 +1,20 @@
+[
+    {
+        "id": "parimeo_christophhanf",
+        "fullname": "Christoph Hanf",
+        "picturelink": "#",
+        "locations": "Berlin, Hamburg, Frankfurt (Main), München",
+        "start": "01.04.2014",
+        "keyskills": "Java(EE), TTCN-3",
+        "cvlink": "#"
+    },
+    {
+        "id": "parimeo_christianraab",
+        "fullname": "Christian Raab",
+        "picturelink": "#",
+        "locations": "Jena, Berlin, Frankfurt (Main), München",
+        "start": "01.07.2014",
+        "keyskills": "Java(EE), HTML, CSS",
+        "cvlink": "#"
+    }
+]
