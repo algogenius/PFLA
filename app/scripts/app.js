@@ -1,6 +1,12 @@
 'use strict';
 
-angular.module('parimeoFreelancerAppApp', ['ngCookies', 'ngSanitize', 'ngRoute'])
+angular.module('parimeoFreelancerAppApp',
+        [ // module dependencies
+            'ngCookies',
+            'ngSanitize',
+            'ngRoute',
+            'ngResource'
+        ])
     .config(
         ['$routeProvider',
             function ($routeProvider) {

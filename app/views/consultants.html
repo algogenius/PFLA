@@ -13,16 +13,16 @@
         </thead>
         <tbody>
         <tr ng-repeat="consultant in consultants">
-            <td>consultant.picturelink</td>
-            <td>consultant.locations</td>
-            <td>consultant.start</td>
-            <td>consultant.keyskills</td>
-            <td>consultant.cvlink</td>
+            <td><a href="#/consultants/{{consultant.id}}">
+                <img ng-src="#/pictures/{{consultant.pictureid}}" alt="{{consultant.fullname}}"></a></td>
+            <td>{{consultant.locations}}</td>
+            <td>{{consultant.start}}</td>
+            <td>{{consultant.keyskills}}</td>
+            <td><a href="#/cvs/{{consultant.cvid}}">CV</a></td>
             <td>todo</td>
         </tr>
         </tbody>
         <tfoot>
-        Hallo Welt!
         </tfoot>
     </table>
 </div>
