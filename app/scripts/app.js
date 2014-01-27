@@ -16,7 +16,10 @@ angular.module('parimeoFreelancerAppApp',
                     .when('/contact', {templateUrl: 'views/contact.html', controller: 'MainCtrl'})
                     .when('/imprint', {templateUrl: 'views/imprint.html', controller: 'MainCtrl'})
                     .when('/projects', {templateUrl: 'views/projects.html', controller: 'MainCtrl'})
-                    .when('/consultants', {templateUrl: 'views/consultants.html', controller: 'ConsultantsController'})
                     .when('/myprofile', {templateUrl: 'views/myprofile.html', controller: 'MainCtrl'})
+
+                    .when('/consultants', {templateUrl: 'views/consultants.html', controller: 'ConsultantsController'})
+                    .when('/consultants/:consultantId', {templateUrl: 'views/consultant.html', controller: 'ConsultantController'})
+
                     .otherwise({redirectTo: '/'});
             }]);
