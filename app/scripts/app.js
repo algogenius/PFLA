@@ -10,7 +10,7 @@ angular.module('parimeoFreelancerAppApp', ['ngCookies', 'ngSanitize', 'ngRoute']
                     .when('/contact', {templateUrl: 'views/contact.html', controller: 'MainCtrl'})
                     .when('/imprint', {templateUrl: 'views/imprint.html', controller: 'MainCtrl'})
                     .when('/projects', {templateUrl: 'views/projects.html', controller: 'MainCtrl'})
-                    .when('/consultants', {templateUrl: 'views/consultants.html', controller: 'MainCtrl'})
+                    .when('/consultants', {templateUrl: 'views/consultants.html', controller: 'ConsultantsController'})
                     .when('/myprofile', {templateUrl: 'views/myprofile.html', controller: 'MainCtrl'})
                     .otherwise({redirectTo: '/'});
             }]);

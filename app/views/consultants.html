@@ -1,5 +1,28 @@
 <div class="jumbotron">
     <h1>Berater</h1>
-
-    <p>Hier entsteht eine Übersicht über verfügbare Berater...</p>
+    <table>
+        <thead>
+        <tr>
+            <td>Bild</td>
+            <td>Ort(e)</td>
+            <td>Start</td>
+            <td>Technologie(n)</td>
+            <td>Profil</td>
+            <td>Anfrage senden</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="consultant in consultants">
+            <td>consultant.picturelink</td>
+            <td>consultant.locations</td>
+            <td>consultant.start</td>
+            <td>consultant.keyskills</td>
+            <td>consultant.cvlink</td>
+            <td>todo</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        Hallo Welt!
+        </tfoot>
+    </table>
 </div>
