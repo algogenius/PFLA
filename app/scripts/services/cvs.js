@@ -2,7 +2,7 @@
 
 var app = angular.module('parimeoFreelancerAppApp');
 
-app.factory('CV',
+app.factory('CVService',
     ['$http',
         function ($http) {
 
@@ -10,23 +10,23 @@ app.factory('CV',
             var factory = {};
 
             factory.getCVS = function () {
-                return $http.get(urlBase)
+                return $http.get(urlBase);
             };
 
             factory.getCV = function (id) {
-                return $http.get(urlBase + '/' + id)
+                return $http.get(urlBase + '/' + id);
             };
 
             factory.insertCV = function (cv) {
-                $http.post(urlBase, cv)
+                $http.post(urlBase, cv);
             };
 
             factory.updateCV = function (cv) {
-                $http.put(urlBase, cv.id, cv)
+                $http.put(urlBase, cv.id, cv);
             };
 
             factory.deleteCV = function (id) {
-                $http.delete(urlBase + '/' + id)
+                $http.delete(urlBase + '/' + id);
             };
 
             return factory;

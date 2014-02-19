@@ -3,7 +3,8 @@
 var app = angular.module('parimeoFreelancerAppApp');
 
 app.controller('CVSController',
-    ['$scope', 'CV', function ($scope, CV) {
+    ['$scope', 'CVService',
+        function ($scope, CVService) {
 
         $scope.status;
         $scope.cvs;
@@ -11,9 +12,9 @@ app.controller('CVSController',
         getCVS();
 
         function getCVS() {
-            CV.getCVS()
-                .success(function (cvs) {
-                    $scope.cvs = cvs;
+            CVService.getCVS()
+                .success(function (result) {
+                    $scope.cvs = result;
                 })
                 .error(function (error) {
                     $scope.status = error.message;
