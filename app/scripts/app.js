@@ -19,7 +19,7 @@ angular.module('parimeoFreelancerAppApp',
                     .when('/myprofile', {templateUrl: 'views/myprofile.html', controller: 'MainCtrl'})
 
                     .when('/consultants', {templateUrl: 'views/consultants.html', controller: 'ConsultantsController'})
-                    .when('/consultants/:id', {templateUrl: 'views/consultant.html', controller: 'ConsultantController'})
+                    .when('/consultants/:Id', {templateUrl: 'views/consultant.html', controller: 'ConsultantController'})
 
                     .otherwise({redirectTo: '/'});
             }]);

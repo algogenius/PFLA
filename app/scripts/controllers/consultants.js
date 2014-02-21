@@ -3,41 +3,29 @@
 var app = angular.module('parimeoFreelancerAppApp');
 
 app.controller('ConsultantsController',
-    ['$scope', 'ConsultantService',
-        function ($scope, ConsultantService) {
-
-            $scope.status;
-            $scope.consultants;
-
-            getConsultants();
-
-            function getConsultants() {
-                ConsultantService.getConsultants()
-                    .success(function (result) {
-                        $scope.consultants = result;
-                    })
-                    .error(function (error) {
-                        $scope.status = error.message;
-                    });
-            }
+    ['$scope', '$log', 'ConsultantService',
+        function ($scope, $log, ConsultantService) {
+            $scope.consultants = ConsultantService.query(
+                function () {
+                    $log.info('Anfrage an REST Service erfolgreich!');
+                },
+                function (error) {
+                    $log.info('Ein Fehler ist aufgetreten');
+                    console.dir(error);
+                });
         }]);
 
 app.controller('ConsultantController',
-    ['$scope', '$routeParams', 'ConsultantService',
-        function ($scope, $routeParams, ConsultantService) {
-
-            $scope.status;
-            $scope.consultant;
-
-            getConsultant($routeParams.id);
-
-            function getConsultant(id) {
-                ConsultantService.getConsultant(id)
-                    .success(function (result) {
-                        $scope.consultant = result;
-                    })
-                    .error(function (error) {
-                        $scope.status = error.message;
-                    });
-            }
+    ['$scope', '$routeParams', '$log', 'ConsultantService',
+        function ($scope, $routeParams, $log, ConsultantService) {
+            $scope.consultant = ConsultantService.get(
+                {},
+                {Id: $routeParams.Id},
+                function () {
+                    $log.info('Anfrage an REST Service erfolgreich!');
+                },
+                function (error) {
+                    $log.info('Ein Fehler ist aufgetreten');
+                    console.dir(error);
+                });
         }]);
