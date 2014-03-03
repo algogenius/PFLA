@@ -7,25 +7,22 @@ app.controller('ConsultantsController',
         function ($scope, $log, ConsultantService) {
             $scope.consultants = ConsultantService.query(
                 function () {
-                    $log.info('Anfrage an REST Service erfolgreich!');
                 },
                 function (error) {
-                    $log.info('Ein Fehler ist aufgetreten');
-                    console.dir(error);
+                    $log.info('Ein Fehler ist aufgetreten!');
                 });
         }]);
 
 app.controller('ConsultantController',
     ['$scope', '$routeParams', '$log', 'ConsultantService',
         function ($scope, $routeParams, $log, ConsultantService) {
-            $scope.consultant = ConsultantService.get(
+            $scope.consultants = ConsultantService.get(
                 {},
                 {Id: $routeParams.Id},
                 function () {
-                    $log.info('Anfrage an REST Service erfolgreich!');
+                    $scope.consultant = $scope.consultants[0];
                 },
                 function (error) {
-                    $log.info('Ein Fehler ist aufgetreten');
-                    console.dir(error);
+                    $log.info('Ein Fehler ist aufgetreten!');
                 });
         }]);
