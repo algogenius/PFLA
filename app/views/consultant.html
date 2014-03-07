@@ -1,26 +1,50 @@
 <div class="jumbotron">
-    <div ng-hide="editing" ng-click="editing=true">
-        <h1>{{consultant.fullname}}</h1>
+    <form editable-form name="formConsultant" onaftersave="saveConsultant()">
+        <div>
+            <span class="title">Vor- & Nachname: </span>
+            <span editable-text="consultant.fullname" e-name="fullname" e-required>
+                {{consultant.fullname  || 'Vor- & Nachname' }}
+            </span>
+        </div>
 
-        <dl>
-            <dt>Verfügbar ab:</dt>
-            <dd>{{consultant.start}}</dd>
-            <dt>Einsatzort(e):</dt>
-            <dd>{{consultant.locations}}</dd>
-            <dt>Kernkompetenz(en):</dt>
-            <dd>{{consultant.keyskills}}</dd>
-        </dl>
-    </div>
-
-    <form ng-show="editing" ng-submit="editing=false">
-        <label>Vor- & Nachname:</label>
-        <input type="text" ng-model="consultant.fullname" placeholder="Vor- & Nachname" ng-required/>
-        <label>Verfügbar ab:</label>
-        <input type="date" ng-model="consultant.start" placeholder="Verfügbar ab" ng-required/>
-        <label>Einsatzort(e):</label>
-        <input type="text" ng-model="consultant.locations" placeholder="Einsatzort(e)"/>
-        <label>Kernkompetenzen:</label>
-        <input type="text" ng-model="consultant.keyskills" placeholder="Kernkompetenzen"/>
-        <button class="btn btn-lg btn-success" type="submit">Speichern</button>
+        <div class="buttons">
+            <button type="button" class="btn btn-default" ng-click="formConsultant.$show()"
+                    ng-show="!formConsultant.$visible">
+                Bearbeiten
+            </button>
+            <span ng-show="formConsultant.$visible">
+                <button type="submit" class="btn btn-primary" ng-disabled="formConsultant.$waiting">Speichern</button>
+                <button type="button" class="btn btn-default" ng-disabled="formConsultant.$waiting"
+                        ng-click="formConsultant.$cancel()">Abbrechen
+                </button>
+            </span>
+        </div>
     </form>
+    <div>{{consultant}}</div>
+    <!--
+        <div ng-hide="editing" ng-click="editing=true">
+            <h1>{{consultant.fullname}}</h1>
+
+            <dl>
+                <dt>Verfügbar ab:</dt>
+                <dd>{{consultant.start}}</dd>
+                <dt>Einsatzort(e):</dt>
+                <dd>{{consultant.locations}}</dd>
+                <dt>Kernkompetenz(en):</dt>
+                <dd>{{consultant.keyskills}}</dd>
+            </dl>
+        </div>
+
+        <form ng-show="editing" ng-submit="editing=false">
+            <label>Vor- & Nachname:</label>
+            <input type="text" ng-model="consultant.fullname" placeholder="Vor- & Nachname" ng-required/>
+            <label>Verfügbar ab:</label>
+            <input type="date" ng-model="consultant.start" placeholder="Verfügbar ab" ng-required/>
+            <label>Einsatzort(e):</label>
+            <input type="text" ng-model="consultant.locations" placeholder="Einsatzort(e)"/>
+            <label>Kernkompetenzen:</label>
+            <input type="text" ng-model="consultant.keyskills" placeholder="Kernkompetenzen"/>
+            <button class="btn btn-lg btn-success" type="submit">Speichern</button>
+        </form>
+    -->
 </div>

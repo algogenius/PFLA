@@ -9,7 +9,7 @@ app.controller('ConsultantsController',
                 function () {
                 },
                 function (error) {
-                    $log.info('Ein Fehler ist aufgetreten!');
+                    $log.info('Bei der Abfrage der Berater ist ein Fehler aufgetreten!');
                 });
         }]);
 
@@ -20,9 +20,14 @@ app.controller('ConsultantController',
                 {},
                 {Id: $routeParams.Id},
                 function () {
+                    // ermittle den ersten (und einzigen) Berater aus dem JSON Array
                     $scope.consultant = $scope.consultants[0];
                 },
                 function (error) {
-                    $log.info('Ein Fehler ist aufgetreten!');
+                    $log.info('Bei der Abfrage des Beraters ist ein Fehler aufgetreten!');
                 });
+
+            $scope.saveConsultant = function () {
+                $scope.consultant.$save();
+            }
         }]);
