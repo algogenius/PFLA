@@ -23,7 +23,7 @@ app.controller('ConsultantController',
 
             $scope.consultants = ConsultantService.get(
                 {},
-                {Id: $routeParams.Id},
+                {ConsultantId: $routeParams.ConsultantId},
                 function () {
                     // ermittle den ersten (und einzigen) Berater aus dem JSON Array
                     $scope.consultant = $scope.consultants[0];
