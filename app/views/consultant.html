@@ -1,9 +1,63 @@
 <div class="jumbotron">
     <form editable-form name="formConsultant" onaftersave="saveConsultant()">
         <div>
-            <span class="title">Vor- & Nachname: </span>
+            <span class="title">Name: </span>
             <span editable-text="consultant.fullname" e-name="fullname" e-required>
-                {{consultant.fullname  || 'Vor- & Nachname' }}
+                {{consultant.fullname  || '-' }}
+            </span>
+        </div>
+        <div>
+            <span class="title">E-Mail: </span>
+            <span editable-text="consultant.email" e-name="email" e-required>
+                {{consultant.email  || '-' }}
+            </span>
+        </div>
+        <div>
+            <span class="title">Handy: </span>
+            <span editable-text="consultant.mobile" e-name="mobile">
+                {{consultant.mobile  || '-' }}
+            </span>
+        </div>
+        <div>
+            <span class="title">Telefon: </span>
+            <span editable-text="consultant.phone" e-name="phone">
+                {{consultant.phone  || '-' }}
+            </span>
+        </div>
+        <div>
+            <span class="title">Fax: </span>
+            <span editable-text="consultant.fax" e-name="fax">
+                {{consultant.fax  || '-' }}
+            </span>
+        </div>
+        <div>
+            <span class="title">Adresse: </span>
+            <span editable-text="consultant.address" e-name="address">
+                {{consultant.address  || '-' }}
+            </span>
+        </div>
+        <div>
+            <span class="title">Rechnungsadresse: </span>
+            <span editable-text="consultant.address_billing" e-name="address_billing">
+                {{consultant.address_billing  || '-' }}
+            </span>
+        </div>
+        <div>
+            <span class="title">Beschreibung: </span>
+            <span editable-text="consultant.shortdescription" e-name="shortdescription">
+                {{consultant.shortdescription  || '-' }}
+            </span>
+        </div>
+        <div>
+            <span class="title">Kernkompetenzen: </span>
+            <span editable-text="consultant.keyskills" e-name="keyskills">
+                {{consultant.keyskills  || '-' }}
+            </span>
+        </div>
+        <div>
+            <span class="title">Einsatzorte: </span>
+            <span editable-text="consultant.locations" e-name="locations">
+                {{consultant.locations  || '-' }}
             </span>
         </div>
 
@@ -20,7 +74,7 @@
             </span>
         </div>
     </form>
-    <div>{{consultant}}</div>
+
     <!--
         <div ng-hide="editing" ng-click="editing=true">
             <h1>{{consultant.fullname}}</h1>
