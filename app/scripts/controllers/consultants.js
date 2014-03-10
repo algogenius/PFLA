@@ -14,18 +14,23 @@ app.controller('ConsultantsController',
         }]);
 
 app.controller('ConsultantController',
-    ['$scope', '$routeParams', '$log', 'ConsultantService',
-        function ($scope, $routeParams, $log, ConsultantService) {
+    ['$scope', '$routeParams', '$log', 'ConsultantService', 'ConsultantCVService',
+        function ($scope, $routeParams, $log, ConsultantService, ConsultantCVService) {
+
+            var errorHandler = function (error) {
+                $log.info('Bei der Abfrage des Beraters ist ein Fehler aufgetreten!');
+            };
+
             $scope.consultants = ConsultantService.get(
                 {},
                 {Id: $routeParams.Id},
                 function () {
                     // ermittle den ersten (und einzigen) Berater aus dem JSON Array
                     $scope.consultant = $scope.consultants[0];
-                },
-                function (error) {
-                    $log.info('Bei der Abfrage des Beraters ist ein Fehler aufgetreten!');
-                });
+
+                    $scope.cvs = ConsultantCVService.get({}, {ConsultantId: $scope.consultant.id}, function () {
+                    }, errorHandler);
+                }, errorHandler);
 
             $scope.saveConsultant = function () {
                 $scope.consultant.$save();
