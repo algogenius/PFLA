@@ -67,6 +67,25 @@
             </span>
         </div>
 
+        <table>
+            <thead>
+            <tr>
+                <td>Titel</td>
+                <td>Beschreibung</td>
+                <td>Typ</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="cv in cvs">
+                <td>{{cv.title}}</td>
+                <td>{{cv.description}}</td>
+                <td>{{cv.filetype}}</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+
         <div class="buttons">
             <button type="button" class="btn btn-default" ng-click="formConsultant.$show()"
                     ng-show="!formConsultant.$visible">
@@ -80,5 +99,4 @@
             </span>
         </div>
     </form>
-    <div>{{cvs}}</div>
 </div>
