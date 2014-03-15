@@ -21,16 +21,35 @@ app.controller('ConsultantController',
                 $log.info('Bei der Abfrage des Beraters ist ein Fehler aufgetreten!');
             };
 
-            $scope.consultants = ConsultantService.get(
-                {},
-                {ConsultantId: $routeParams.ConsultantId},
-                function () {
-                    // ermittle den ersten (und einzigen) Berater aus dem JSON Array
-                    $scope.consultant = $scope.consultants[0];
+            $scope.task = $routeParams.Task;
 
-                    $scope.cvs = ConsultantCVService.get({}, {ConsultantId: $scope.consultant.id}, function () {
+            if ($scope.task === 'add') {
+                $scope.consultants = {};
+                $scope.consultant = {
+                    'fullname': '',
+                    'start': '',
+                    'locations': '',
+                    'keyskills': '',
+                    'address': '',
+                    'address_billing': '',
+                    'shortdescription': '',
+                    'email': '',
+                    'mobile': '',
+                    'phone': '',
+                    'fax': ''
+                };
+            } else {
+                $scope.consultants = ConsultantService.get(
+                    {},
+                    {ConsultantId: $routeParams.ConsultantId},
+                    function () {
+                        // ermittle den ersten (und einzigen) Berater aus dem JSON Array
+                        $scope.consultant = $scope.consultants[0];
+
+                        $scope.cvs = ConsultantCVService.get({}, {ConsultantId: $scope.consultant.id}, function () {
+                        }, errorHandler);
                     }, errorHandler);
-                }, errorHandler);
+            }
 
             $scope.saveConsultant = function () {
                 $scope.consultant.$save();

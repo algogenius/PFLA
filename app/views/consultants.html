@@ -1,5 +1,6 @@
 <div class="jumbotron">
     <h1>Unsere Berater</h1>
+    <a href="#/consultants/0/add" class="btn btn-default">Berater hinzufügen</a>
     <table>
         <thead>
         <tr>
@@ -7,19 +8,22 @@
             <td>Start</td>
             <td>Einsatzort(e)</td>
             <td>Kernkompetenz(en)</td>
-            <td>Profil</td>
-            <td>Anfrage</td>
+            <td>Profile</td>
+            <td>Aktionen</td>
         </tr>
         </thead>
         <tbody>
         <tr ng-repeat="consultant in consultants">
-            <td><a href="#/consultants/{{consultant.id}}">
+            <td><a href="#/consultants/{{consultant.id}}/view">
                 <img ng-src="#/pictures/{{consultant.pictureid}}" alt="{{consultant.fullname}}"></a></td>
             <td>{{consultant.start}}</td>
             <td>{{consultant.locations}}</td>
             <td>{{consultant.keyskills}}</td>
             <td><a href="#">CV</a></td>
-            <td><a href="#">Kontakt</a></td>
+            <td>
+                <a href="mailto:info@parimeo.com" class="btn btn-default">Mail</a>
+                <a href="#/consultants/{{consultant.id}}/edit" class="btn btn-default">Edit</a>
+            </td>
         </tr>
         </tbody>
         <tfoot>

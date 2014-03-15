@@ -2,26 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e00dc6-ff79-459a-a127-dd61021c7b7b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/consultant.html" afterPath="$PROJECT_DIR$/app/views/consultant.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/consultants.html" afterPath="$PROJECT_DIR$/app/views/consultants.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/consultants.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/consultants.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/" />
-    <file path="/Dummy.txt" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394799467119" ignored="false" />
+    <file path="/Dummy.txt" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394800607928" ignored="false" />
     <file path="/main.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390851208168" ignored="false" />
     <file path="/index.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390944520001" ignored="false" />
     <file path="/contact.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390566187282" ignored="false" />
     <file path="/imprint.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390566231639" ignored="false" />
     <file path="/projects.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390566297382" ignored="false" />
-    <file path="/consultants.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394489992754" ignored="false" />
+    <file path="/consultants.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394803749337" ignored="false" />
     <file path="/app.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394188657796" ignored="false" />
     <file path="$PROJECT_DIR$/../PhoneCat/app/js/controllers.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390571655726" ignored="false" />
     <file path="$PROJECT_DIR$/../PhoneCat/app/js/app.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390571731755" ignored="false" />
     <file path="/myprofile.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390572206287" ignored="false" />
     <file path="/a.dummy" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394488860553" ignored="false" />
     <file path="/main.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390858068541" ignored="false" />
-    <file path="/consultants.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394490075824" ignored="false" />
+    <file path="/consultants.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394917902874" ignored="false" />
     <file path="/consultants.json" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390853462931" ignored="false" />
-    <file path="/consultant.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394800343889" ignored="false" />
+    <file path="/consultant.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394916426129" ignored="false" />
     <file path="/cvs.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394489037696" ignored="false" />
     <file path="/user.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1393964166378" ignored="false" />
     <file path="/login.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1393964489727" ignored="false" />
@@ -85,10 +88,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="56" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="consultants.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/consultants.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="52" selection-end="836" vertical-scroll-proportion="-25.92">
+            <state line="22" column="43" selection-start="818" selection-end="818" vertical-scroll-proportion="-21.12">
               <folding />
             </state>
           </provider>
@@ -97,28 +109,16 @@
       <file leaf-file-name="consultant.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/consultant.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="11" selection-start="3846" selection-end="3846" vertical-scroll-proportion="-18.24">
+            <state line="1" column="85" selection-start="109" selection-end="109" vertical-scroll-proportion="39.36">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="66" selection-start="2398" selection-end="2398" vertical-scroll-proportion="0.5175202">
-              <folding>
-                <marker date="1394800594000" expanded="true" signature="862:1015" placeholder="..." />
-                <marker date="1394800594000" expanded="true" signature="955:983" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consultants.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="consultants.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/consultants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="42" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
+            <state line="38" column="56" selection-start="1396" selection-end="1396" vertical-scroll-proportion="2.3030303">
               <folding />
             </state>
           </provider>
@@ -171,12 +171,12 @@
         <option value="$PROJECT_DIR$/app/scripts/services/user.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/cvs.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/consultants.js" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
-        <option value="$PROJECT_DIR$/app/views/consultants.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/consultants.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/cvs.js" />
-        <option value="$PROJECT_DIR$/app/views/consultant.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/views/consultants.html" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/views/consultant.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/consultants.js" />
       </list>
     </option>
   </component>
@@ -531,7 +531,11 @@
       <created>1394799484603</created>
       <updated>1394799484603</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adding table for CVs">
+      <created>1394800611887</created>
+      <updated>1394800611887</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -628,7 +632,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finishing REST Service for CVs (GET consultant/:id/cvs/:id)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding table for CVs" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -654,6 +658,7 @@
     <MESSAGE value="Refactoring CV Service and making two services (one plain and one for consultants)" />
     <MESSAGE value="Fixing route parameter...but CVs still not works" />
     <MESSAGE value="Finishing REST Service for CVs (GET consultant/:id/cvs/:id)" />
+    <MESSAGE value="Adding table for CVs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -700,7 +705,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/user.js">
@@ -718,15 +725,13 @@
         <state line="8" column="36" selection-start="187" selection-end="187" vertical-scroll-proportion="0.25771812" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="47" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.67785233" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/consultants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="70" column="66" selection-start="2398" selection-end="2398" vertical-scroll-proportion="0.3265306">
+          <folding>
+            <marker date="1394800594000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1394800594000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -737,34 +742,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/consultants.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/consultants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="52" selection-end="836" vertical-scroll-proportion="-25.92">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/consultants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="42" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
+        <state line="9" column="45" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/consultant.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="11" selection-start="3846" selection-end="3846" vertical-scroll-proportion="-18.24">
+        <state line="1" column="85" selection-start="109" selection-end="109" vertical-scroll-proportion="39.36">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/views/consultants.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="66" selection-start="2398" selection-end="2398" vertical-scroll-proportion="0.5175202">
-          <folding>
-            <marker date="1394800594000" expanded="true" signature="862:1015" placeholder="..." />
-            <marker date="1394800594000" expanded="true" signature="955:983" placeholder="..." />
-          </folding>
+        <state line="22" column="43" selection-start="818" selection-end="818" vertical-scroll-proportion="-21.12">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="56" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/consultants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="56" selection-start="1396" selection-end="1396" vertical-scroll-proportion="2.3030303">
+          <folding />
         </state>
       </provider>
     </entry>

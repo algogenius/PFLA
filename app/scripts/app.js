@@ -21,7 +21,7 @@ app.config(
                 .when('/myprofile', {templateUrl: 'views/myprofile.html', controller: 'MainCtrl'})
 
                 .when('/consultants', {templateUrl: 'views/consultants.html', controller: 'ConsultantsController'})
-                .when('/consultants/:ConsultantId', {templateUrl: 'views/consultant.html', controller: 'ConsultantController'})
+                .when('/consultants/:ConsultantId/:Task', {templateUrl: 'views/consultant.html', controller: 'ConsultantController'})
 
                 .otherwise({redirectTo: '/'});
         }]);
