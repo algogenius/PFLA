@@ -3,25 +3,38 @@
 var app = angular.module('parimeoFreelancerAppApp');
 
 app.controller('ConsultantsController',
-    ['$scope', '$log', 'ConsultantService',
-        function ($scope, $log, ConsultantService) {
-            $scope.consultants = ConsultantService.query(
-                function () {
-                },
-                function (error) {
-                    $log.info('Bei der Abfrage der Berater ist ein Fehler aufgetreten!');
-                });
+    ['$scope', 'ConsultantService',
+        function ($scope, ConsultantService) {
+            $scope.consultants = ConsultantService.query();
         }]);
 
 app.controller('ConsultantController',
-    ['$scope', '$routeParams', '$log', 'ConsultantService', 'ConsultantCVService',
-        function ($scope, $routeParams, $log, ConsultantService, ConsultantCVService) {
-
-            var errorHandler = function (error) {
-                $log.info('Bei der Abfrage des Beraters ist ein Fehler aufgetreten!');
-            };
+    ['$scope', '$routeParams', 'ConsultantService', 'ConsultantCVService',
+        function ($scope, $routeParams, ConsultantService, ConsultantCVService) {
 
             $scope.task = $routeParams.Task;
+
+            $scope.isEditing = function () {
+                return ($scope.task === 'add' || $scope.task === 'edit');
+            }
+
+            $scope.editForm = function () {
+                $scope.task = 'edit';
+                $scope.formConsultant.$show();
+            }
+
+            $scope.cancelForm = function () {
+                $scope.formConsultant.$cancel();
+            }
+
+            $scope.persistConsultant = function (data) {
+                if ($scope.task === 'add') {
+                    ConsultantService.add(data);
+                } else if ($scope.task === 'edit') {
+                    ConsultantService.save(data);
+                }
+                $scope.task = 'view';
+            }
 
             if ($scope.task === 'add') {
                 $scope.consultants = {};
@@ -45,13 +58,7 @@ app.controller('ConsultantController',
                     function () {
                         // ermittle den ersten (und einzigen) Berater aus dem JSON Array
                         $scope.consultant = $scope.consultants[0];
-
-                        $scope.cvs = ConsultantCVService.get({}, {ConsultantId: $scope.consultant.id}, function () {
-                        }, errorHandler);
-                    }, errorHandler);
-            }
-
-            $scope.saveConsultant = function () {
-                $scope.consultant.$save();
+                        $scope.cvs = ConsultantCVService.get({}, {ConsultantId: $scope.consultant.id});
+                    });
             }
         }]);

@@ -1,6 +1,5 @@
 <div class="jumbotron">
-    <!-- TODO wie kann ich anhand der action das Formular anzeigen bzw verbergen? -->
-    <form editable-form name="formConsultant" onaftersave="saveConsultant()">
+    <form editable-form name="formConsultant" shown="isEditing()" onbeforesave="persistConsultant($data)">
         <div>
             <span class="title">Name: </span>
             <span editable-text="consultant.fullname" e-name="fullname" e-required>
@@ -63,7 +62,7 @@
         </div>
         <div>
             <span class="title">Verfügbar ab: </span>
-            <span editable-bsdate="consultant.start" e-name="start" e-datepicker-popup="dd-MMMM-yyyy">
+            <span editable-bsdate="consultant.start" e-name="start" e-datepicker-popup="dd-MMMM-yyyy" e-required>
                 {{consultant.start  || '-' }}
             </span>
         </div>
@@ -87,14 +86,13 @@
         </table>
 
         <div class="buttons">
-            <button type="button" class="btn btn-default" ng-click="formConsultant.$show()"
-                    ng-show="!formConsultant.$visible">
+            <button type="button" class="btn btn-default" ng-click="editForm()" ng-show="!formConsultant.$visible">
                 Bearbeiten
             </button>
             <span ng-show="formConsultant.$visible">
                 <button type="submit" class="btn btn-primary" ng-disabled="formConsultant.$waiting">Speichern</button>
                 <button type="button" class="btn btn-default" ng-disabled="formConsultant.$waiting"
-                        ng-click="formConsultant.$cancel()">Abbrechen
+                        ng-click="cancelForm()">Abbrechen
                 </button>
             </span>
         </div>
