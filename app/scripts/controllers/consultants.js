@@ -3,14 +3,15 @@
 var app = angular.module('parimeoFreelancerAppApp');
 
 app.controller('ConsultantsController',
-    ['$scope', 'ConsultantService',
-        function ($scope, ConsultantService) {
+    ['$scope', '$modal', 'ConsultantService',
+        function ($scope, $modal, ConsultantService) {
 
             $scope.deleteConsultant = function (consultant) {
+                $modal.open({title: "test"});
                 // TODO CHanf: Modaler Bestätigungsdialog
-                ConsultantService.delete({ConsultantId: consultant.id}).$promise.then(function () {
-                    $scope.consultants = ConsultantService.query();
-                });
+                //ConsultantService.delete({ConsultantId: consultant.id}).$promise.then(function () {
+                //    $scope.consultants = ConsultantService.query();
+                //});
             }
 
             $scope.consultants = ConsultantService.query();

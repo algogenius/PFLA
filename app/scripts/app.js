@@ -6,6 +6,7 @@ var app = angular.module('parimeoFreelancerAppApp',
         'ngSanitize',
         'ngRoute',
         'ngResource',
+        'ui.bootstrap',
         'xeditable'
     ]);
 
