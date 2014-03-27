@@ -2,25 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e00dc6-ff79-459a-a127-dd61021c7b7b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/consultant.html" afterPath="$PROJECT_DIR$/app/views/consultant.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/consultants.html" afterPath="$PROJECT_DIR$/app/views/consultants.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/consultants.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/consultants.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/" />
-    <file path="/Dummy.txt" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394918525235" ignored="false" />
+    <file path="/Dummy.txt" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1395889836883" ignored="false" />
     <file path="/main.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390851208168" ignored="false" />
     <file path="/index.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390944520001" ignored="false" />
     <file path="/contact.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390566187282" ignored="false" />
     <file path="/imprint.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390566231639" ignored="false" />
     <file path="/projects.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390566297382" ignored="false" />
-    <file path="/consultants.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394803749337" ignored="false" />
+    <file path="/consultants.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1395044779077" ignored="false" />
     <file path="/app.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1395037163899" ignored="false" />
     <file path="$PROJECT_DIR$/../PhoneCat/app/js/controllers.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390571655726" ignored="false" />
     <file path="$PROJECT_DIR$/../PhoneCat/app/js/app.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390571731755" ignored="false" />
     <file path="/myprofile.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390572206287" ignored="false" />
     <file path="/a.dummy" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394488860553" ignored="false" />
     <file path="/main.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390858068541" ignored="false" />
-    <file path="/consultants.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1395040878582" ignored="false" />
+    <file path="/consultants.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1395404434449" ignored="false" />
     <file path="/consultants.json" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1390853462931" ignored="false" />
     <file path="/consultant.html" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1395042214899" ignored="false" />
     <file path="/cvs.js" changelist="76e00dc6-ff79-459a-a127-dd61021c7b7b" time="1394489037696" ignored="false" />
@@ -98,7 +98,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1394800594000" expanded="true" signature="862:1015" placeholder="..." />
                 <marker date="1394800594000" expanded="true" signature="955:983" placeholder="..." />
@@ -110,7 +110,7 @@
       <file leaf-file-name="consultants.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/consultants.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="18" column="41" selection-start="669" selection-end="669" vertical-scroll-proportion="-9.08">
               <folding />
             </state>
           </provider>
@@ -119,7 +119,7 @@
       <file leaf-file-name="consultant.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/consultant.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="24" selection-start="3723" selection-end="3723" vertical-scroll-proportion="-90.24">
+            <state line="94" column="57" selection-start="3756" selection-end="3756" vertical-scroll-proportion="-19.68">
               <folding />
             </state>
           </provider>
@@ -128,7 +128,7 @@
       <file leaf-file-name="consultants.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/consultants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="32" selection-start="2255" selection-end="2255" vertical-scroll-proportion="3.584352">
+            <state line="31" column="23" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.051391862">
               <folding />
             </state>
           </provider>
@@ -137,7 +137,7 @@
       <file leaf-file-name="consultants.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/services/consultants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="45" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
+            <state line="8" column="71" selection-start="240" selection-end="252" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -183,17 +183,18 @@
         <option value="$PROJECT_DIR$/app/scripts/services/consultants.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/cvs.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/views/consultants.html" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
-        <option value="$PROJECT_DIR$/app/views/consultant.html" />
+        <option value="$PROJECT_DIR$/app/views/consultants.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/consultants.js" />
+        <option value="$PROJECT_DIR$/app/views/consultant.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="774" />
+    <option name="x" value="-1901" />
+    <option name="y" value="-367" />
+    <option name="width" value="1350" />
+    <option name="height" value="880" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -221,7 +222,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -355,6 +355,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -549,7 +550,11 @@
       <created>1394918532900</created>
       <updated>1394918532900</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Making handling of editable form more handy">
+      <created>1395042485097</created>
+      <updated>1395042485097</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -573,10 +578,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
+    <frame x="-1901" y="-367" width="1350" height="880" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33180428" sideWeight="0.49918962" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33157894" sideWeight="0.49918962" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -587,20 +592,20 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32721713" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858992" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.7033639" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22123177" sideWeight="0.6681957" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22009203" sideWeight="0.66842103" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35225376" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35225376" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729626" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858992" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -646,7 +651,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fix of task handling (add, edit, view), but there are still mistakes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making handling of editable form more handy" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -674,6 +679,7 @@
     <MESSAGE value="Finishing REST Service for CVs (GET consultant/:id/cvs/:id)" />
     <MESSAGE value="Adding table for CVs" />
     <MESSAGE value="Small fix of task handling (add, edit, view), but there are still mistakes" />
+    <MESSAGE value="Making handling of editable form more handy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -720,9 +726,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/user.js">
@@ -740,23 +744,9 @@
         <state line="8" column="36" selection-start="187" selection-end="187" vertical-scroll-proportion="0.25771812" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/consultants.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/cvs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="21" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/consultants.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="15" column="55" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -771,23 +761,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/consultants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="55" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+        <state line="8" column="71" selection-start="240" selection-end="252" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/cvs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="21" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/consultant.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="24" selection-start="3723" selection-end="3723" vertical-scroll-proportion="-90.24">
+        <state line="94" column="57" selection-start="3756" selection-end="3756" vertical-scroll-proportion="-19.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/consultants.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="41" selection-start="669" selection-end="669" vertical-scroll-proportion="-9.08">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/consultants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="32" selection-start="2255" selection-end="2255" vertical-scroll-proportion="3.584352">
+        <state line="31" column="23" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.051391862">
           <folding />
         </state>
       </provider>

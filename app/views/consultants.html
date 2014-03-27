@@ -21,8 +21,9 @@
             <td>{{consultant.keyskills}}</td>
             <td><a href="#">CV</a></td>
             <td>
-                <a href="mailto:info@parimeo.com" class="btn btn-default">Mail</a>
+                <a href="#/mail/consultants/{{consultant.id}}" class="btn btn-default">Mail</a>
                 <a href="#/consultants/{{consultant.id}}/edit" class="btn btn-default">Edit</a>
+                <button ng-click="deleteConsultant(consultant)" class="btn btn-default">Delete</button>
             </td>
         </tr>
         </tbody>

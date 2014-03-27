@@ -5,6 +5,14 @@ var app = angular.module('parimeoFreelancerAppApp');
 app.controller('ConsultantsController',
     ['$scope', 'ConsultantService',
         function ($scope, ConsultantService) {
+
+            $scope.deleteConsultant = function (consultant) {
+                // TODO CHanf: Modaler Bestätigungsdialog
+                ConsultantService.delete({ConsultantId: consultant.id}).$promise.then(function () {
+                    $scope.consultants = ConsultantService.query();
+                });
+            }
+
             $scope.consultants = ConsultantService.query();
         }]);
 
@@ -21,6 +29,7 @@ app.controller('ConsultantController',
             $scope.editForm = function () {
                 $scope.task = 'edit';
                 $scope.formConsultant.$show();
+                // TODO CHanf: Im Formular fehlen die Daten des Beraters? Warum klappt das nur, wenn man im View-Mode startet?
             }
 
             $scope.cancelForm = function () {
