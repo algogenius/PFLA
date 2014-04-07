@@ -1,31 +1,15 @@
 'use strict';
 
 var app = angular.module('parimeoFreelancerAppApp');
-// TODO does not work because of missing templates
-app.controller('DlgConfirmController',
-    ['$scope', '$modal',
-        function ($scope, $modal) {
-            $scope.ok = function () {
-                alert($scope.text);
-            };
-            $scope.cancel = function () {
-                $modal.dismiss("cancel");
-            };
-        }]);
 
 app.controller('ConsultantsController',
-    ['$scope', '$modal', 'ConsultantService',
-        function ($scope, $modal, ConsultantService) {
+    ['$scope', 'ConsultantService',
+        function ($scope, ConsultantService) {
 
             $scope.deleteConsultant = function (consultant) {
-                $modal.open({
-                    templateUrl: 'views/dlgConfirm.html',
-                    controller: 'DlgConfirmController'
+                ConsultantService.delete({ConsultantId: consultant.id}).$promise.then(function () {
+                    $scope.consultants = ConsultantService.query();
                 });
-                // TODO CHanf: Modaler Bestätigungsdialog
-                //ConsultantService.delete({ConsultantId: consultant.id}).$promise.then(function () {
-                //    $scope.consultants = ConsultantService.query();
-                //});
             }
 
             $scope.consultants = ConsultantService.query();
