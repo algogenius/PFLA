@@ -59,7 +59,7 @@ app.controller('ConsultantController',
                 }
                 $scope.task = 'view';
             }
-
+            // TODO CHanf: Das Datum wird momentan nicht korrekt übermittelt!!! Wie geht das überhaupt? Javascript Date -> Unix Date -> MySQL?
             if ($scope.task === 'add') {
                 $scope.consultants = {};
                 $scope.consultant = {
