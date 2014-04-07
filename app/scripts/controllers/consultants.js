@@ -32,8 +32,8 @@ app.controller('ConsultantsController',
         }]);
 
 app.controller('ConsultantController',
-    ['$scope', '$routeParams', 'ConsultantService', 'ConsultantCVService',
-        function ($scope, $routeParams, ConsultantService, ConsultantCVService) {
+    ['$scope', '$routeParams', '$filter', 'ConsultantService', 'ConsultantCVService',
+        function ($scope, $routeParams, $filter, ConsultantService, ConsultantCVService) {
 
             $scope.task = $routeParams.Task;
 
@@ -64,7 +64,7 @@ app.controller('ConsultantController',
                 $scope.consultants = {};
                 $scope.consultant = {
                     'fullname': '',
-                    'start': '',
+                    'start': new Date(),
                     'locations': '',
                     'keyskills': '',
                     'address': '',

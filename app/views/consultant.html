@@ -62,8 +62,11 @@
         </div>
         <div>
             <span class="title">Verfügbar ab: </span>
-            <span editable-bsdate="consultant.start" e-name="start" e-datepicker-popup="dd-MM-yyyy" e-required>
-                {{consultant.start  || '-' }}
+            <span editable-bsdate="consultant.start"
+                  e-name="start"
+                  e-datepicker-popup="dd-MMMM-yyyy"
+                  e-required>
+                {{(consultant.start | date:"dd-MM-yyyy")  || '-' }}
             </span>
         </div>
 
