@@ -6,7 +6,7 @@ app.factory('ConsultantService',
     ['$resource',
         function ($resource) {
             return $resource(
-                'http://10.211.55.6/restsvc01/consultants/:ConsultantId',
+                'http://10.211.55.6/pfla-backend/consultants/:ConsultantId',
                 {ConsultantId: '@ConsultantId'},
                 { 'get': {method: 'GET', isArray: true, headers: {'Accept': 'application/json'}},
                     'query': {method: 'GET', isArray: true, headers: {'Accept': 'application/json'}},

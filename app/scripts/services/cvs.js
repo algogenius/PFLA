@@ -6,7 +6,7 @@ app.factory('CVService',
     ['$resource',
         function ($resource) {
             return $resource(
-                'http://10.211.55.6/restsvc01/cvs/:CvId',
+                'http://10.211.55.6/pfla-backend/cvs/:CvId',
                 {CvId: '@CvId'},
                 {'get': {method: 'GET', isArray: true, headers: {'Accept': 'application/json'}},
                     'query': {method: 'GET', isArray: true, headers: {'Accept': 'application/json'}},
@@ -21,7 +21,7 @@ app.factory('ConsultantCVService',
     ['$resource',
         function ($resource) {
             return $resource(
-                'http://10.211.55.6/restsvc01/consultants/:ConsultantId/cvs/:CvId',
+                'http://10.211.55.6/pfla-backend/consultants/:ConsultantId/cvs/:CvId',
                 {ConsultantId: '@ConsultantId', CvId: '@CvId'},
                 {'get': {method: 'GET', isArray: true, headers: {'Accept': 'application/json'}},
                     'query': {method: 'GET', isArray: true, headers: {'Accept': 'application/json'}}
