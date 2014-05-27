@@ -12,10 +12,11 @@ $app->config('cookies.path', '/');
 $authorize = function (\Slim\Route $route) use ($app, $db) {
 	$token = $app->getCookie("XSRF-TOKEN");
 	if ($token) {
-		echo "Token: ".$token;
+# TODO CHanf: Hier habe ich mit einen Auth-Token (Cookie) herumexperimentiert.
+#		echo "Token: ".$token;
 	} else {
-		$app->halt(403);
-		echo "App halted!";
+#		$app->halt(403);
+#		echo "App halted! 403";
 	}
 };
 
