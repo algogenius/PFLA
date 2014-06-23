@@ -20,7 +20,9 @@
     <link rel="stylesheet" href="bower_components/angular-xeditable/dist/css/xeditable.css">
     <!-- endbuild -->
 </head>
+
 <body ng-app="parimeoFreelancerAppApp">
+
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -32,20 +34,41 @@
 <![endif]-->
 
 <!-- Main Page Template -->
-<div class="container">
-    <div class="header">
-        <ul class="nav nav-pills pull-right">
-            <li class="active"><a href="#/home">Start</a></li>
-            <li><a href="#/contact">Kontakt</a></li>
-            <li><a href="#/imprint">Impressum</a></li>
-        </ul>
-        <p class="lead">
-            <a href="#/home"><img src="images/logo.png" alt="PARIMEO UG (Quedlinburg)"></a>
-        </p>
-    </div>
-    <div ng-view></div>
-    <div class="footer">
-        <p>&copy; PARIMEO UG 2014</p>
+
+<div class="container-fluid">
+    <div class="row" style="margin-top:50px">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="container-fluid" background-color="">
+                <div class="header">
+                    <p class="lead">
+                        <a href="#/home"><img src="images/logo.png" alt="PARIMEO UG"></a>
+                    </p>
+
+                    <ul class="nav nav-pills pull-right">
+                        <li class="active"><a href="#/home">Home</a></li>
+                        <li><a href="#/contact">Kontakt</a></li>
+                        <li><a href="#/imprint">Impressum</a></li>
+                    </ul>
+
+                    <h3 class="text-muted">FLAPP</h3>
+                    <hr>
+                    <ol class="breadcrumb">
+                        <li class="active">Home</li>
+                    </ol>
+
+                </div>
+
+                <!-- Hier werden die Views eingebunden -->
+                <div ng-view></div>
+
+                <div class="footer">
+                    <hr>
+                    <p>&copy; PARIMEO UG 2014</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
     </div>
 </div>
 
