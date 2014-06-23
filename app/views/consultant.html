@@ -1,102 +1,118 @@
-<div class="jumbotron">
-    <form editable-form name="formConsultant" shown="isEditing()" onbeforesave="persistConsultant($data)">
-        <div>
-            <span class="title">Name: </span>
-            <span editable-text="consultant.fullname" e-name="fullname" e-required>
-                {{consultant.fullname  || '-' }}
-            </span>
-        </div>
-        <div>
-            <span class="title">E-Mail: </span>
-            <span editable-email="consultant.email" e-name="email" e-required>
-                {{consultant.email  || '-' }}
-            </span>
-        </div>
-        <div>
-            <span class="title">Handy: </span>
-            <span editable-tel="consultant.mobile" e-name="mobile">
-                {{consultant.mobile  || '-' }}
-            </span>
-        </div>
-        <div>
-            <span class="title">Telefon: </span>
-            <span editable-tel="consultant.phone" e-name="phone">
-                {{consultant.phone  || '-' }}
-            </span>
-        </div>
-        <div>
-            <span class="title">Fax: </span>
-            <span editable-tel="consultant.fax" e-name="fax">
-                {{consultant.fax  || '-' }}
-            </span>
-        </div>
-        <div>
-            <span class="title">Adresse: </span>
-            <span editable-textarea="consultant.address" e-name="address" e-rows="4" e-cols="40">
-                {{consultant.address  || '-' }}
-            </span>
-        </div>
-        <div>
-            <span class="title">Rechnungsadresse: </span>
-            <span editable-textarea="consultant.address_billing" e-name="address_billing" e-rows="4" e-cols="40">
-                {{consultant.address_billing  || '-' }}
-            </span>
-        </div>
-        <div>
-            <span class="title">Beschreibung: </span>
-            <span editable-textarea="consultant.shortdescription" e-name="shortdescription" e-rows="5" e-cols="40">
-                {{consultant.shortdescription  || '-' }}
-            </span>
-        </div>
-        <div>
-            <span class="title">Kernkompetenzen: </span>
-            <span editable-textarea="consultant.keyskills" e-name="keyskills" e-rows="5" e-cols="40">
-                {{consultant.keyskills  || '-' }}
-            </span>
-        </div>
-        <div>
-            <span class="title">Einsatzorte: </span>
-            <span editable-textarea="consultant.locations" e-name="locations" e-rows="4" e-cols="40">
-                {{consultant.locations  || '-' }}
-            </span>
-        </div>
-        <div>
-            <span class="title">Verfügbar ab: </span>
-            <span editable-text="consultant.start"
-                  e-name="start"
-                  e-required>
-                {{consultant.start  || '-' }}
-            </span>
-        </div>
+<div class="row">
+    <div class="col-md-12">
+        <form role="form" editable-form name="formConsultant" shown="isEditing()"
+              onbeforesave="persistConsultant($data)">
 
-        <table>
-            <thead>
-            <tr>
-                <td>Titel</td>
-                <td>Beschreibung</td>
-                <td>Typ</td>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="cv in cvs">
-                <td>{{cv.title}}</td>
-                <td>{{cv.description}}</td>
-                <td>{{cv.filetype}}</td>
-            </tr>
-            </tbody>
-            <tfoot></tfoot>
-        </table>
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label for="fullname">Vollständiger Name</label>
+                    <span editable-text="consultant.fullname" e-name="fullname" e-required class="form-control">
+                        {{consultant.fullname  || '-' }}
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <span editable-email="consultant.email" e-name="email" e-required class="form-control">
+                        {{consultant.email  || '-' }}
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="start">Verfügbar ab</label>
+                    <span editable-text="consultant.start" e-name="start" e-required class="form-control">
+                        {{consultant.start  || '-' }}
+                    </span>
+                </div>
+            </div>
 
-        <div class="buttons">
-            <button type="button" class="btn btn-default" ng-click="editForm()" ng-show="!formConsultant.$visible">
-                Bearbeiten
-            </button>
-            <span ng-show="formConsultant.$visible">
-                <button type="submit" class="btn btn-primary" ng-disabled="formConsultant.$waiting">Speichern</button>
-                <button type="button" class="btn btn-default" ng-disabled="formConsultant.$waiting"
-                        ng-click="cancelForm()">Abbrechen
+            <div class="col-md-4" style="text-align:center;">
+                <img src="" style="width: 150px; height: 200px;margin-top: 10px" alt="150x200" class="img-thumbnail">
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="mobile">Handy</label>
+                    <span editable-tel="consultant.mobile" e-name="mobile" class="form-control">
+                        {{consultant.mobile  || '-' }}
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <span editable-tel="consultant.phone" e-name="phone" class="form-control">
+                        {{consultant.phone  || '-' }}
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="fax">Fax</label>
+                    <span editable-tel="consultant.fax" e-name="fax" class="form-control">
+                        {{consultant.fax  || '-' }}
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adresse</label>
+                    <span editable-textarea="consultant.address" e-name="address" e-rows="4" class="form-control">
+                        {{consultant.address  || '-' }}
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="billingAddress">Rechnungsadresse</label>
+                    <span editable-textarea="consultant.address_billing" e-name="address_billing" e-rows="4"
+                          class="form-control">
+                        {{consultant.address_billing  || '-' }}
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="shortdescription">Kurzbeschreibung</label>
+                    <span editable-textarea="consultant.shortdescription" e-name="shortdescription" e-rows="5"
+                          class="form-control">
+                        {{consultant.shortdescription  || '-' }}
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="keyskills">Fähigkeiten</label>
+                    <span editable-textarea="consultant.keyskills" e-name="keyskills" e-rows="5" class="form-control">
+                        {{consultant.keyskills  || '-' }}
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="locations">Einsatzorte</label>
+                    <span editable-textarea="consultant.locations" e-name="locations" e-rows="4" class="form-control">
+                        {{consultant.locations  || '-' }}
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-md-12" style="text-align:center">
+                <button type="button" class="btn btn-default" ng-click="editForm()" ng-show="!formConsultant.$visible">
+                    Bearbeiten
                 </button>
-            </span>
-        </div>
-    </form>
+                <span ng-show="formConsultant.$visible">
+                    <button type="submit" class="btn btn-primary" ng-disabled="formConsultant.$waiting">Speichern
+                    </button>
+                    <button type="button" class="btn btn-default" ng-disabled="formConsultant.$waiting"
+                            ng-click="cancelForm()">Abbrechen
+                    </button>
+                </span>
+            </div>
+        </form>
+
+    </div>
 </div>
+
+<!-- TODO Profile / CV -->
+<!--table>
+    <thead>
+    <tr>
+        <td>Titel</td>
+        <td>Beschreibung</td>
+        <td>Typ</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="cv in cvs">
+        <td>{{cv.title}}</td>
+        <td>{{cv.description}}</td>
+        <td>{{cv.filetype}}</td>
+    </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table-->
