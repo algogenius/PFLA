@@ -40,6 +40,7 @@ app.controller('ConsultantController',
             }
 
             if ($scope.task === 'add') {
+                // TODO Verbesserung!!! Siehe Button, der diese Methode aufruft.
                 $scope.consultants = {};
                 $scope.consultant = {
                     'fullname': '',
@@ -54,7 +55,6 @@ app.controller('ConsultantController',
                     'phone': '',
                     'fax': ''
                 };
-                $scope.formConsultant.$show();
             } else {
                 $scope.consultants = ConsultantService.get(
                     {},
