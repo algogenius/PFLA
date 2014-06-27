@@ -30,11 +30,11 @@ app.controller('ConsultantController',
                 $scope.formConsultant.$cancel();
             }
 
-            $scope.persistConsultant = function (data) {
+            $scope.persistConsultant = function () {
                 if ($scope.task === 'add') {
-                    ConsultantService.add(data);
+                    ConsultantService.add($scope.consultant);
                 } else if ($scope.task === 'edit') {
-                    ConsultantService.save(data);
+                    ConsultantService.save($scope.consultant);
                 }
                 $scope.task = 'view';
             }
