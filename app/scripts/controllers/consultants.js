@@ -21,14 +21,9 @@ app.controller('ConsultantController',
 
             $scope.task = $routeParams.Task;
 
-            $scope.isEditing = function () {
-                return ($scope.task === 'add' || $scope.task === 'edit');
-            }
-
             $scope.editForm = function () {
                 $scope.task = 'edit';
                 $scope.formConsultant.$show();
-                // TODO CHanf: Im Formular fehlen die Daten des Beraters? Warum klappt das nur, wenn man im View-Mode startet?
             }
 
             $scope.cancelForm = function () {
@@ -43,7 +38,7 @@ app.controller('ConsultantController',
                 }
                 $scope.task = 'view';
             }
-            // TODO CHanf: Das Datum wird momentan nicht korrekt übermittelt!!! Wie geht das überhaupt? Javascript Date -> Unix Date -> MySQL?
+
             if ($scope.task === 'add') {
                 $scope.consultants = {};
                 $scope.consultant = {
@@ -59,6 +54,7 @@ app.controller('ConsultantController',
                     'phone': '',
                     'fax': ''
                 };
+                $scope.formConsultant.$show();
             } else {
                 $scope.consultants = ConsultantService.get(
                     {},
@@ -67,6 +63,9 @@ app.controller('ConsultantController',
                         // ermittle den ersten (und einzigen) Berater aus dem JSON Array
                         $scope.consultant = $scope.consultants[0];
                         $scope.cvs = ConsultantCVService.get({}, {ConsultantId: $scope.consultant.id});
+                        if ($scope.task === 'edit') {
+                            $scope.formConsultant.$show();
+                        }
                     });
             }
         }]);
