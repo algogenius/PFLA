@@ -6,19 +6,22 @@
             <div class="col-md-8">
                 <div class="form-group">
                     <label for="fullname">Vollständiger Name</label>
-                    <span editable-text="consultant.fullname" e-name="fullname" e-required class="form-control">
+                    <span editable-text="consultant.fullname" e-name="fullname" e-required class="form-control"
+                          e-class="form-control">
                         {{consultant.fullname  || '-' }}
                     </span>
                 </div>
                 <div class="form-group">
                     <label for="email">E-Mail</label>
-                    <span editable-email="consultant.email" e-name="email" e-required class="form-control">
+                    <span editable-email="consultant.email" e-name="email" e-required class="form-control"
+                          e-class="form-control">
                         {{consultant.email  || '-' }}
                     </span>
                 </div>
                 <div class="form-group">
                     <label for="start">Verfügbar ab</label>
-                    <span editable-text="consultant.start" e-name="start" e-required class="form-control">
+                    <span editable-text="consultant.start" e-name="start" e-required class="form-control"
+                          e-class="form-control">
                         {{consultant.start  || '-' }}
                     </span>
                 </div>
@@ -31,51 +34,55 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label for="mobile">Handy</label>
-                    <span editable-tel="consultant.mobile" e-name="mobile" class="form-control">
-                        {{consultant.mobile  || '-' }}
-                    </span>
+
+                    <div editable-tel="consultant.mobile" e-name="mobile" class="form-control" e-class="form-control">
+                        {{consultant.mobile || '-' }}
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="phone">Telefon</label>
-                    <span editable-tel="consultant.phone" e-name="phone" class="form-control">
+                    <span editable-tel="consultant.phone" e-name="phone" class="form-control" e-class="form-control">
                         {{consultant.phone  || '-' }}
                     </span>
                 </div>
                 <div class="form-group">
                     <label for="fax">Fax</label>
-                    <span editable-tel="consultant.fax" e-name="fax" class="form-control">
+                    <span editable-tel="consultant.fax" e-name="fax" class="form-control" e-class="form-control">
                         {{consultant.fax  || '-' }}
                     </span>
                 </div>
                 <div class="form-group">
                     <label for="address">Adresse</label>
-                    <span editable-textarea="consultant.address" e-name="address" e-rows="4" class="form-control">
+                    <span editable-textarea="consultant.address" e-name="address" e-rows="4" class="form-control"
+                          e-class="form-control">
                         {{consultant.address  || '-' }}
                     </span>
                 </div>
                 <div class="form-group">
                     <label for="billingAddress">Rechnungsadresse</label>
                     <span editable-textarea="consultant.address_billing" e-name="address_billing" e-rows="4"
-                          class="form-control">
+                          class="form-control" e-class="form-control">
                         {{consultant.address_billing  || '-' }}
                     </span>
                 </div>
                 <div class="form-group">
                     <label for="shortdescription">Kurzbeschreibung</label>
                     <span editable-textarea="consultant.shortdescription" e-name="shortdescription" e-rows="5"
-                          class="form-control">
+                          class="form-control" e-class="form-control">
                         {{consultant.shortdescription  || '-' }}
                     </span>
                 </div>
                 <div class="form-group">
                     <label for="keyskills">Fähigkeiten</label>
-                    <span editable-textarea="consultant.keyskills" e-name="keyskills" e-rows="5" class="form-control">
+                    <span editable-textarea="consultant.keyskills" e-name="keyskills" e-rows="5" class="form-control"
+                          e-class="form-control">
                         {{consultant.keyskills  || '-' }}
                     </span>
                 </div>
                 <div class="form-group">
                     <label for="locations">Einsatzorte</label>
-                    <span editable-textarea="consultant.locations" e-name="locations" e-rows="4" class="form-control">
+                    <span editable-textarea="consultant.locations" e-name="locations" e-rows="4" class="form-control"
+                          e-class="form-control">
                         {{consultant.locations  || '-' }}
                     </span>
                 </div>
