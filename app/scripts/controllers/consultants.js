@@ -22,7 +22,6 @@ app.controller('ConsultantController',
             $scope.task = $routeParams.Task;
 
             $scope.editForm = function () {
-                $scope.task = 'edit';
                 $scope.formConsultant.$show();
             }
 
@@ -36,7 +35,6 @@ app.controller('ConsultantController',
                 } else if ($scope.task === 'edit') {
                     ConsultantService.save($scope.consultant);
                 }
-                $scope.task = 'view';
             }
 
             if ($scope.task === 'add') {
@@ -62,7 +60,9 @@ app.controller('ConsultantController',
                     function () {
                         // ermittle den ersten (und einzigen) Berater aus dem JSON Array
                         $scope.consultant = $scope.consultants[0];
+
                         $scope.cvs = ConsultantCVService.get({}, {ConsultantId: $scope.consultant.id});
+
                         if ($scope.task === 'edit') {
                             $scope.formConsultant.$show();
                         }
