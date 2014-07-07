@@ -2,7 +2,7 @@
 
 var app = angular.module('parimeoFreelancerAppApp');
 
-app.controller('MainCtrl',
+app.controller('MainController',
     ['$scope',
         function ($scope) {
             $scope.news = [
