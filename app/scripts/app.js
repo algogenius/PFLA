@@ -28,7 +28,7 @@ app.config(
         }]);
 
 
-app.controller('RootController',
+app.controller('AppController',
     ['$scope', '$route', '$routeParams', '$location' ,
         function ($scope, $route, $routeParams, $location) {
 

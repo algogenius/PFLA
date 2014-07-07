@@ -21,7 +21,7 @@
     <!-- endbuild -->
 </head>
 
-<body ng-app="parimeoFreelancerAppApp" ng-controller="RootController">
+<body ng-app="parimeoFreelancerAppApp" ng-controller="AppController">
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -65,18 +65,18 @@
                 <div class="footer">
                     <hr>
                     <p>&copy; PARIMEO UG 2014</p>
+                    <hr>
+                    <pre>$location.path() = {{$location.path()}}</pre>
+                    <pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>
+                    <pre>$route.current.params = {{$route.current.params}}</pre>
+                    <pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
+                    <pre>$routeParams = {{$routeParams}}</pre>
                 </div>
             </div>
         </div>
         <div class="col-md-3"></div>
     </div>
 </div>
-
-<pre>$location.path() = {{$location.path()}}</pre>
-<pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>
-<pre>$route.current.params = {{$route.current.params}}</pre>
-<pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
-<pre>$routeParams = {{$routeParams}}</pre>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
 <script>
