@@ -29,10 +29,24 @@ app.config(
 
 
 app.controller('AppController',
-    ['$scope', '$route', '$routeParams', '$location' ,
-        function ($scope, $route, $routeParams, $location) {
+    ['$rootScope', '$scope', '$route', '$routeParams', '$location' ,
+        function ($rootScope, $scope, $route, $routeParams, $location) {
 
             $scope.$route = $route;
             $scope.$location = $location;
             $scope.$routeParams = $routeParams;
+
+            // $scope.$on("$routeChangeStart", update());
+            // $scope.$on("$routeChangeSuccess", update());
+            // $scope.$on("$routeChangeError", update());
+            // $scope.$on("$routeUpdate", update());
+
+            // $scope.$on("$locationChangeSuccess", update());
+
+            // $scope.$on("$viewContentLoaded", update());
+
+//            function update() {
+//                console.log("Event fired!");
+//                console.dir($scope.$route);
+//            }
         }]);

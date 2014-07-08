@@ -19,25 +19,24 @@ app.controller('ConsultantController',
     ['$scope', '$routeParams', '$filter', 'ConsultantService', 'ConsultantCVService',
         function ($scope, $routeParams, $filter, ConsultantService, ConsultantCVService) {
 
-            console.log("entering ConsultantController");
-
             $scope.task = $routeParams.Task;
 
             $scope.editForm = function () {
-                console.log("calling editForm()");
+                console.log("edit form");
                 $scope.formConsultant.$show();
             }
 
             $scope.cancelForm = function () {
-                console.log("calling cancelForm()");
+                console.log("cancel form");
                 $scope.formConsultant.$cancel();
             }
 
             $scope.persistConsultant = function () {
-                console.log("calling persistConsultant()");
                 if ($scope.task === 'add') {
+                    console.log("add consultant");
                     ConsultantService.add($scope.consultant);
                 } else if ($scope.task === 'edit') {
+                    console.log("save consultant");
                     ConsultantService.save($scope.consultant);
                 }
             }
@@ -70,7 +69,7 @@ app.controller('ConsultantController',
                     {},
                     {ConsultantId: $routeParams.ConsultantId},
                     function () {
-                        console.log("calling callback from REST-GET");
+                        console.log("fetching consultant");
                         // ermittle den ersten (und einzigen) Berater aus dem JSON Array
                         $scope.consultant = $scope.consultants[0];
 
