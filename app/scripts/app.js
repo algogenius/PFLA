@@ -40,13 +40,9 @@ app.controller('AppController',
             // $scope.$on("$routeChangeSuccess", update());
             // $scope.$on("$routeChangeError", update());
             // $scope.$on("$routeUpdate", update());
-
             // $scope.$on("$locationChangeSuccess", update());
-
             // $scope.$on("$viewContentLoaded", update());
-
 //            function update() {
 //                console.log("Event fired!");
-//                console.dir($scope.$route);
 //            }
         }]);

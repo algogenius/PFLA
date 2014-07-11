@@ -22,28 +22,24 @@ app.controller('ConsultantController',
             $scope.task = $routeParams.Task;
 
             $scope.editForm = function () {
-                console.log("edit form");
                 $scope.formConsultant.$show();
             }
 
             $scope.cancelForm = function () {
-                console.log("cancel form");
                 $scope.formConsultant.$cancel();
             }
 
             $scope.persistConsultant = function () {
                 if ($scope.task === 'add') {
-                    console.log("add consultant");
                     ConsultantService.add($scope.consultant);
+                    $scope.task = "edit";
                 } else if ($scope.task === 'edit') {
-                    console.log("save consultant");
                     ConsultantService.save($scope.consultant);
                 }
             }
 
             if ($scope.task === 'add') {
-                // TODO Verbesserung!!! Siehe Button, der diese Methode aufruft.
-                /**
+                /** TODO CHANF
                  if (typeof flug.Datum == "string") {
                    this.Datum = moment(flug.Datum).toDate();
                  } else {
@@ -64,12 +60,14 @@ app.controller('ConsultantController',
                     'phone': '',
                     'fax': ''
                 };
+                $scope.$on("$viewContentLoaded", function () {
+                    $scope.editForm()
+                });
             } else {
                 $scope.consultants = ConsultantService.get(
                     {},
                     {ConsultantId: $routeParams.ConsultantId},
                     function () {
-                        console.log("fetching consultant");
                         // ermittle den ersten (und einzigen) Berater aus dem JSON Array
                         $scope.consultant = $scope.consultants[0];
 
