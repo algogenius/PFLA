@@ -22,9 +22,9 @@
                 <div class="form-group">
                     <label for="start">Verfügbar ab</label>
 
-                    <div editable-text="consultant.start" e-name="start" e-required class="form-control"
+                    <div editable-date="consultant.start" e-name="start" e-required class="form-control"
                          e-class="form-control">
-                        {{consultant.start || '-' }}
+                        {{ consultant.start | date: "dd.MM.yyyy" }}
                     </div>
                 </div>
             </div>

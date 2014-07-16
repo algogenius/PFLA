@@ -39,17 +39,10 @@ app.controller('ConsultantController',
             }
 
             if ($scope.task === 'add') {
-                /** TODO CHANF
-                 if (typeof flug.Datum == "string") {
-                   this.Datum = moment(flug.Datum).toDate();
-                 } else {
-                   this.Datum = flug.Datum;
-                 }
-                 */
                 $scope.consultants = {};
                 $scope.consultant = {
                     'fullname': '',
-                    'start': new Date(),
+                    'start': Date.now(),
                     'locations': '',
                     'keyskills': '',
                     'address': '',
@@ -61,7 +54,7 @@ app.controller('ConsultantController',
                     'fax': ''
                 };
                 $scope.$on("$viewContentLoaded", function () {
-                    $scope.editForm()
+                    $scope.editForm();
                 });
             } else {
                 $scope.consultants = ConsultantService.get(
